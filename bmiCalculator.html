@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital@1&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .calculator {
+        border-radius: 20px;
+        width: 400px;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #ffcccc;
+        border: 2px crimson solid;
+        box-shadow: 15px 15px 15px -5px rgb(105, 38, 38);
+      }
+      h1 {
+        padding-top: 20px;
+        color: cadetblue;
+        font-family: "Roboto", sans-serif;
+      }
+      p {
+        font-size: x-large;
+      }
+      button {
+        border-radius: 8px;
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        font-size: larger;
+        background-color: green;
+        color: white;
+      }
+      #exitButton {
+        margin-right: 10px;
+      }
+      input {
+        font-size: large;
+        height: 30px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>BMI Calculator</h1>
+      <p>Enter Weight</p>
+      <input type="text" placeholder="Enter Your Weight Here" />
+      <p>Enter Height</p>
+      <input type="text" placeholder="Enter Your Height Here" />
+      <p>Your BMI</p>
+      <input type="text" /><br />
+      <button>Calculate BMI</button>
+      <button>Reset BMI</button>
+      <button id="exitButton">Exit</button>
+    </div>
+  </body>
+</html>
